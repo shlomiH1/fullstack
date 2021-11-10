@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init(){
+
+    }
+
+    function changeH1Red(){
+      document.getElementById("id_h1").style.color = "red";
+    }
+
+    function changeH1Blue(){
+      document.getElementById("id_h1").style.color = "blue";
+    }
+
+    function changeH1Green(){
+      document.getElementById("id_h1").style.color = "green";
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1 id="id_h1">Welcome to events world</h1>
+  <h2>Click on your favorite color</h2>
+  <button onclick="changeH1Red()">red</button>
+  <button onclick="changeH1Blue()">blue</button>
+  <button onclick="changeH1Green()">green</button>
+  <!-- לעשות שגם הכפתור הכחול והירוק יעבדו
+  טיפ: אתם צריכים לכל צבע פונקציה משלו -->
+</body>
+</html>

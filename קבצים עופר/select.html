@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init(){
+      // כדי שיאסוף בפעם הראשונה את הווליו של האופציה הראשונה בסלקט
+      changeColor()
+    }
+
+    function changeColor(){
+      document.getElementById("id_h1").style.color = document.getElementById("id_select").value;
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1 id="id_h1">Choose font color:</h1>
+  <!-- מאזין לשינוי בסלקט בוקס -->
+  <select id="id_select" onchange="changeColor()">
+    <option value="purple">סגול</option>
+    <option value="yellow">צהוב</option>
+    <option value="red">אדום</option>
+    <option value="green">ירוק</option>
+  </select>
+</body>
+</html>

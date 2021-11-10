@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // מציג פופ אפ עם ההודעה בסוגריים לאישור המשתמש
+    // alert("js work");
+ 
+    
+    // מגדיר פונקציה אתחול
+    function init(){
+      //document.getElementById() - מתקשר עם תגית בהטמל
+      // .innerHTML = להדפיס לתוך תגית מכילה ולהחליף את התוכן שבתוכה
+      document.getElementById("id_h2").innerHTML = "JS rule 222222";
+      // style - מדבר עם מאפייני הסי אס אס
+      // .color - משנה את הצבע בדיוק כמו בסי אס אס של הגופן
+      document.getElementById("id_h2").style.color = "red";
+      document.getElementById("id_h2").style.background = "yellow";
+      // כדי להפעיל פונקציה אופציה שניה זה לקרוא לה מפונקציה אחרת
+      changeImg();
+    }
+
+    function changeImg(){
+      document.getElementById("id_img").src = "images/pic3.jpg";
+      document.getElementById("id_img").width = 200;
+    }
+  </script>
+</head>
+<!-- onload = האזנה לאירוע של טעינה של כל העמוד -->
+<body onload="init()">
+  <h1>Welcome to Js !</h1>
+  <h2 id="id_h2">----</h2>
+  <img id="id_img" src="images/pic1.jpg" width="400">
+
+  
+</body>
+</html>

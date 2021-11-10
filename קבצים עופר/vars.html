@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // var = let ישן יותר 
+    // var lives = 5;
+    // let - להגדיר משתנה חדש בזכרון
+    // כותבים את המשתנים בחוץ בדרך כלל כאשר נרצה להשתמש בהם גם בפונקציות אחרות
+    let lives = 5;
+    let score = 100;
+    let user = "Mario";
+
+    function init(){
+
+      // score = score - 30;
+      score -= 30;
+
+      // score = 300;
+      document.getElementById("id_lives").innerHTML = lives;
+      document.getElementById("id_score").innerHTML = score;
+      document.getElementById("id_name").innerHTML = user;
+
+      // score = 400;
+    }
+
+    function add10Score(){
+      score += 10;
+      document.getElementById("id_score").innerHTML = score;
+    }
+  </script>
+</head>
+<body onload="init()">
+  <!-- span - לתחום אזור של תגית אחרת שרק האזור הזה יושפע ולא כל הגית -->
+  <button onclick="add10Score()">plus 10 score</button>
+  <button onclick="reduce5Score()">minus 5 score</button>
+  <h2>Lives: <span id="id_lives"></span></h2>
+  <h2>Score: <span id="id_score"></span></h2>
+  <h2>name: <span id="id_name"></span></h2>
+  <img src="images/pacman.jpg" width="400" >
+</body>
+</html>

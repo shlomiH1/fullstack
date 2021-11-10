@@ -1,0 +1,23 @@
+*{
+  /* מנפח את הפדינג והבורד כלפי פנים */
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  background: silver;
+  font-family: sans-serif;
+}
+
+.container{
+  max-width:600px;
+  background: white;
+  padding:8px;
+  /* מרכוז הדיב עצמו */
+  margin:0 auto;
+}
+
+.container h2{
+  color:red;
+}
+

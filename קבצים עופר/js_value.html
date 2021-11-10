@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init(){
+
+    }
+
+    function changeColor(){
+      // .value - אוסף את מה שכתוב בתוך התגית קלט של המשתמש
+      document.getElementById("id_h1").innerHTML = document.getElementById("id_input").value;
+      document.getElementById("id_h1").style.background = document.getElementById("id_input").value;
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1 id="id_h1">Enter your favorite color:</h1>
+  <!-- oninput - מאזין להקלדה בתוך האינפוט -->
+  <input id="id_input" type="text" oninput="changeColor()" >
+  <button onclick="changeColor()">Change color</button>
+</body>
+</html>
